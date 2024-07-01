@@ -5,61 +5,21 @@
   "passwd": {
     "users": [
       {
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtn+8ISAQJtXXP0Io/nTopUBNCJC1Oy1N4Ry4rPDI0m key from kit-kat-bar"
+        ]
+      },
+      {
+        "groups": [
+          "docker",
+          "wheel",
+          "sudo"
+        ],
         "name": "nikola",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOtn+8ISAQJtXXP0Io/nTopUBNCJC1Oy1N4Ry4rPDI0m key from kit-kat-bar"
         ]
-      }
-    ]
-  },
-  "storage": {
-    "disks": [
-      {
-        "device": "/dev/sda",
-        "partitions": [
-          {
-            "label": "var",
-            "number": 5
-          },
-          {
-            "label": "home",
-            "number": 6
-          },
-          {
-            "label": "tmp",
-            "number": 7
-          },
-          {
-            "label": "containers",
-            "number": 8
-          }
-        ]
-      }
-    ],
-    "files": [
-      {
-        "path": "/boot/grub2/user.cfg",
-        "append": [
-          {
-            "compression": "gzip",
-            "source": "data:;base64,H4sIAAAAAAAC/yTJzQrbMAwA4HueInT3IEu2ZB12kCx7jzFSmm0waEt+GHv7UXb9vi/zt+257eu5Peb739mvc31u03Rs53xc722/jm0/vt721+u8Te/1OP689sf39/334wfOH51/7td9+Q/L8WstCZcEALCgM3sdaNYki+To0l2SCDP24bUqIlCCbh5MwTm01IGCYiQQLYZKGp01onZyJleuZjlXCMbwXEojc2k9tQYi4to+y1hjcINF0HC0hG6kkCiFJzKsAsNJoCvl3shqzwXcZVA1UR1iCdlyWG+iJqSIg5xKFIvwggg6kqdaSV0aNQDFLEzsWLMkHMqkVVXz9C8AAP//SAdFt10BAAA="
-          }
-        ]
-      },
-      {
-        "path": "/etc/hostname",
-        "contents": {
-          "compression": "",
-          "source": "data:,bitesized-kit-kat"
-        },
-        "mode": 420
-      }
-    ],
-    "filesystems": [
-      {
-        "device": "/dev/disk/by-label/boot",
-        "format": "ext4",
-        "path": "/boot"
       }
     ]
   }
